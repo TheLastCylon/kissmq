@@ -1,0 +1,50 @@
+\hypertarget{class_subscribe_handler}{\section{Subscribe\-Handler Class Reference}
+\label{class_subscribe_handler}\index{Subscribe\-Handler@{Subscribe\-Handler}}
+}
+
+
+{\ttfamily \#include $<$handler\-\_\-subscribe.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_subscribe_handler_aa4776298814053c1d3f29539348c5316}{Subscribe\-Handler} ()
+\item 
+\hyperlink{class_subscribe_handler_a1bb320dd3c4bd8cee6b1f7654fc835ec}{$\sim$\-Publish\-Handler} ()
+\item 
+void \hyperlink{class_subscribe_handler_aa0a18bafebbb2e31ff9ec5ddd87db1d6}{run} (const Boost\-Ptree \&request, Boost\-Ptree \&response)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_subscribe_handler_aa4776298814053c1d3f29539348c5316}{\index{Subscribe\-Handler@{Subscribe\-Handler}!Subscribe\-Handler@{Subscribe\-Handler}}
+\index{Subscribe\-Handler@{Subscribe\-Handler}!SubscribeHandler@{Subscribe\-Handler}}
+\subsubsection[{Subscribe\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}Subscribe\-Handler\-::\-Subscribe\-Handler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_subscribe_handler_aa4776298814053c1d3f29539348c5316}
+\hypertarget{class_subscribe_handler_a1bb320dd3c4bd8cee6b1f7654fc835ec}{\index{Subscribe\-Handler@{Subscribe\-Handler}!$\sim$\-Publish\-Handler@{$\sim$\-Publish\-Handler}}
+\index{$\sim$\-Publish\-Handler@{$\sim$\-Publish\-Handler}!SubscribeHandler@{Subscribe\-Handler}}
+\subsubsection[{$\sim$\-Publish\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}Subscribe\-Handler\-::$\sim$\-Publish\-Handler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_subscribe_handler_a1bb320dd3c4bd8cee6b1f7654fc835ec}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_subscribe_handler_aa0a18bafebbb2e31ff9ec5ddd87db1d6}{\index{Subscribe\-Handler@{Subscribe\-Handler}!run@{run}}
+\index{run@{run}!SubscribeHandler@{Subscribe\-Handler}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}void Subscribe\-Handler\-::run (
+\begin{DoxyParamCaption}
+\item[{const Boost\-Ptree \&}]{request, }
+\item[{Boost\-Ptree \&}]{response}
+\end{DoxyParamCaption}
+)}}\label{class_subscribe_handler_aa0a18bafebbb2e31ff9ec5ddd87db1d6}
+Add a subscriber to a named queue. If the queue does not exist, create it. T\-O\-D\-O\-: Remmber that we'd like to have configuration to allow for apps to be registered to certain queues at startup of kissmq 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{handler__subscribe_8hpp}{handler\-\_\-subscribe.\-hpp}\item 
+\hyperlink{handler__subscribe_8cpp}{handler\-\_\-subscribe.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,51 @@
+Please be sure to read the \mbox{[}Inter Process Communication\mbox{]} documentation, from the K\-I\-S\-S\-C\-P\-P library first. This document refers to information form there.
+
+In addition to the I\-P\-C identifiers specified in the K\-I\-S\-S\-C\-P\-P documentation above. K\-I\-S\-S\-M\-Q defines the following\-:
+
+\section*{Publishing}
+
+The kcm-\/cmd identifier has to have the value \char`\"{}publish\char`\"{}. \subsection*{Request I\-P\-C\-O\-M\-M(1-\/3)}
+
+\begin{TabularC}{3}
+\hline
+\rowcolor{lightgray}{\bf Identifier }&{\bf Description }&{\bf typical values }\\\cline{1-3}
+kmq-\/name &The name of the queue to publish too. &A unique string identifying the queue. \\\cline{1-3}
+kmq-\/rqid &The Requestor Application's I\-D. &A unique string identifying the application making the request. \\\cline{1-3}
+kmq-\/strn &The actual message to place on the queue. &A base64 bit encoded string, containing the message to be sent to subscribed applications. \\\cline{1-3}
+\end{TabularC}
+\subsection*{Response I\-P\-C\-O\-M\-M(2-\/6)}
+
+\begin{TabularC}{3}
+\hline
+\rowcolor{lightgray}{\bf Identifier }&{\bf Description }&{\bf typical values }\\\cline{1-3}
+kmq-\/name &The name of the queue to publish too. &A unique string identifying the queue. \\\cline{1-3}
+kmq-\/newq &Boolean indicator to show wither the queue already existed, or had to be created. &0 or 1 \-: 0 indicates the queue already existed. \\\cline{1-3}
+kmq-\/size &The current size of the queue. &An integer value indicating the number of messages in the queue at the time of the request. \\\cline{1-3}
+\end{TabularC}
+
+
+\section*{Subscribing}
+
+The kcm-\/cmd identifier has to have the value \char`\"{}subscribe\char`\"{}.
+
+\subsection*{Request I\-P\-C\-O\-M\-M(1-\/3)}
+
+\begin{TabularC}{3}
+\hline
+\rowcolor{lightgray}{\bf Identifier }&{\bf Description }&{\bf typical values }\\\cline{1-3}
+kmq-\/name &The name of the queue to subscribe too. &A unique string identifying the queue. \\\cline{1-3}
+kmq-\/rqid &The Requestor Application's I\-D. &A unique string identifying the application making the request. \\\cline{1-3}
+kmq-\/host &The hostname/ip address where notifications are to be sent too. &A hostname or ip address \\\cline{1-3}
+kmq-\/port &The Port to use for these notifications. &A valid port \\\cline{1-3}
+\end{TabularC}
+
+
+\subsection*{Response I\-P\-C\-O\-M\-M(2-\/6)}
+
+\begin{TabularC}{3}
+\hline
+\rowcolor{lightgray}{\bf Identifier }&{\bf Description }&{\bf typical values }\\\cline{1-3}
+kmq-\/name &The name of the queue to publish too. &A unique string identifying the queue. \\\cline{1-3}
+kmq-\/newq &Boolean indicator to show wither the queue already existed, or had to be created. &0 or 1 \-: 0 indicates the queue already existed. \\\cline{1-3}
+kmq-\/size &The current size of the queue. &An integer value indicating the number of messages in the queue at the time of the request. \\\cline{1-3}
+\end{TabularC}

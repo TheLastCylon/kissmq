@@ -1,0 +1,54 @@
+\hypertarget{class_publish_handler}{\section{Publish\-Handler Class Reference}
+\label{class_publish_handler}\index{Publish\-Handler@{Publish\-Handler}}
+}
+
+
+{\ttfamily \#include $<$handler\-\_\-publish.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_publish_handler_a10553007f1ab341b8d13d77300cf9b11}{Publish\-Handler} ()
+\item 
+\hyperlink{class_publish_handler_a581c3f3630eed2248af453c8735247ed}{$\sim$\-Publish\-Handler} ()
+\item 
+void \hyperlink{class_publish_handler_a72a389e0cf7741f08e948bb4b3818a02}{run} (const Boost\-Ptree \&request, Boost\-Ptree \&response)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_publish_handler_a10553007f1ab341b8d13d77300cf9b11}{\index{Publish\-Handler@{Publish\-Handler}!Publish\-Handler@{Publish\-Handler}}
+\index{Publish\-Handler@{Publish\-Handler}!PublishHandler@{Publish\-Handler}}
+\subsubsection[{Publish\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}Publish\-Handler\-::\-Publish\-Handler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_publish_handler_a10553007f1ab341b8d13d77300cf9b11}
+\hypertarget{class_publish_handler_a581c3f3630eed2248af453c8735247ed}{\index{Publish\-Handler@{Publish\-Handler}!$\sim$\-Publish\-Handler@{$\sim$\-Publish\-Handler}}
+\index{$\sim$\-Publish\-Handler@{$\sim$\-Publish\-Handler}!PublishHandler@{Publish\-Handler}}
+\subsubsection[{$\sim$\-Publish\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}Publish\-Handler\-::$\sim$\-Publish\-Handler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_publish_handler_a581c3f3630eed2248af453c8735247ed}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_publish_handler_a72a389e0cf7741f08e948bb4b3818a02}{\index{Publish\-Handler@{Publish\-Handler}!run@{run}}
+\index{run@{run}!PublishHandler@{Publish\-Handler}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}void Publish\-Handler\-::run (
+\begin{DoxyParamCaption}
+\item[{const Boost\-Ptree \&}]{request, }
+\item[{Boost\-Ptree \&}]{response}
+\end{DoxyParamCaption}
+)}}\label{class_publish_handler_a72a389e0cf7741f08e948bb4b3818a02}
+T\-O\-D\-O\-: Q. What if you end up attempting to create a queue that already existed A. Doesn't matter! Response should indicate if queue exists and how many messages are still in it.
+
+Parameters kmq-\/name \-: The name of the queue in question kmq-\/rqid \-: The Requestor Application's I\-D. kmq-\/strn \-: The actual 64bit encoded message
+
+Response kmq-\/name \-: The name of the queue in question kmq-\/newq \-: Boolean indicator to show wither the queue already existed, or had to be created. kmq-\/size \-: The current size of the queue 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{handler__publish_8hpp}{handler\-\_\-publish.\-hpp}\item 
+\hyperlink{handler__publish_8cpp}{handler\-\_\-publish.\-cpp}\end{DoxyCompactItemize}
